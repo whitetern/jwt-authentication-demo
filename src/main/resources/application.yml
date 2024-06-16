@@ -1,0 +1,19 @@
+server.port: 8080
+
+spring.application.name: jwt-demo
+spring:
+  datasource:
+    url:
+    username:
+    password:
+
+  # Hibernate properties
+  jpa:
+    hibernate.ddl-auto: update
+    open-in-view: false
+
+security:
+  jwt:
+    secret-key:
+    # 1H in millisecond
+    expiration-time: 3600000
